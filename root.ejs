@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>File MetaData</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+    <body>
+        <div class="container">
+            <h1 class="header">
+                API基本调用: 文件信息微服务(File MetaData)
+            </h1>
+            <blockquote>
+                使用场景:
+                <ul>通过接口<code><%=serverHost %>filemeta</code>调用服务,将<code>文件</code>传送给该接口(POST方法)，返回<code>JSON</code>格式的文件信息数据。</ul>
+                <ul>如返回<code>{ name: filename, size: filesize }</code></ul>
+            </blockquote>
+            <h3>调用示范:</h3>
+            <form action='/filemeta' method='post' enctype='multipart/form-data'>
+                <input type='file' name='file'>
+                <input type='submit'>
+            </form>
+        </div>
+</body>
+</html>
